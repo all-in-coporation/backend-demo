@@ -1,0 +1,55 @@
+{
+  "activityName": "AZTECA Buenos Aires S.R.L",
+  "shortActivityName": "AZTECA",
+  "activityAddress": {
+    "street": "México",
+    "addressNumber": 603,
+    "floor": "",
+    "room": "",
+    "province": "CABA",
+    "city": "CABA",
+    "country": "AR",
+    "zipCode": "1439",
+    "location": [-33.8569, 151.2152],
+    "neighborhood": "Monserrat"
+  },
+  "workingTimes": [
+    {
+      "day": "Monday",
+      "startTime": "09:30:00",
+      "endTime": "22:00:00",
+      "timeZone": "(UTC-03:00) Buenos Aires"
+    },
+    {
+      "day": "Tuesday",
+      "startTime": "09:30:00",
+      "endTime": "22:00:00",
+      "timeZone": "(UTC-03:00) Buenos Aires"
+    },
+    {
+      "day": "Wednesday",
+      "startTime": "09:30:00",
+      "endTime": "22:00:00",
+      "timeZone": "(UTC-03:00) Buenos Aires"
+    },
+    {
+      "day": "Thursday",
+      "startTime": "09:30:00",
+      "endTime": "22:00:00",
+      "timeZone": "(UTC-03:00) Buenos Aires"
+    },
+    {
+      "day": "Friday",
+      "startTime": "09:30:00",
+      "endTime": "22:00:00",
+      "timeZone": "(UTC-03:00) Buenos Aires"
+    }
+  ],
+  "realStarPoints": 1001.1,
+  "realStarVotes": 220,
+  "mainImageUrl": "https://d38ls2kcjnhfdj.cloudfront.net/d101a4c0-0098-488a-b8c2-1126cb267fb5.jpg",
+  "keywords": ["Tacos", "Burritos", "Cerveza", "Buena Onda", "Algo", "XXX"],
+  "available": true,
+  "category": "restaurant",
+  "subcategory": "cultural"
+}
