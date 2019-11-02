@@ -15,7 +15,7 @@
   },
   "emulators": {
     "functions": {
-      "port": "9001"
+      "port": "7001"
     }
   }
 }

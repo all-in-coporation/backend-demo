@@ -45,6 +45,10 @@ app.post("/categories", async (request: any, response: any) => {
     response.status(500).send(error);
   }
 });
+
+/**
+ * Obtiene una lista de actividades
+ */
 app.get("/activities", async (request: any, response: any) => {
   try {
     const activitiesQuerySnapshot = await db.collection("activities").get();
@@ -57,6 +61,32 @@ app.get("/activities", async (request: any, response: any) => {
     });
 
     response.json(activities);
+  } catch (error) {
+    response.status(500).send(error);
+  }
+});
+/**
+ * Obtiene una Actividades
+ */
+app.get("/activities/:id", async (request, response) => {
+  try {
+    const activityId = request.params.id;
+
+    if (!activityId) throw new Error("Activity ID is required");
+
+    const activity = await db
+      .collection("activities")
+      .doc(activityId)
+      .get();
+
+    if (!activity.exists) {
+      throw new Error("Activity doesn't exist.");
+    }
+
+    response.json({
+      id: activity.id,
+      data: activity.data()
+    });
   } catch (error) {
     response.status(500).send(error);
   }
